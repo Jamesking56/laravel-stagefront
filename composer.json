@@ -1,5 +1,5 @@
 {
-    "name": "codezero/laravel-stagefront",
+    "name": "jamesking56/laravel-stagefront",
     "description": "Quickly add some password protection to a staging site.",
     "keywords": [
         "laravel",
@@ -12,6 +12,10 @@
         {
             "name": "Ivan Vermeyen",
             "email": "ivan@codezero.be"
+        },
+        {
+            "name": "James King",
+            "email": "james@jamesking.dev"
         }
     ],
     "require": {

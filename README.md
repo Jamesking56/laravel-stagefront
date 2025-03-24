@@ -1,13 +1,13 @@
 # Laravel StageFront
 
-[![GitHub release](https://img.shields.io/github/release/codezero-be/laravel-stagefront.svg?style=flat-square)](https://github.com/codezero-be/laravel-stagefront/releases)
+[![GitHub release](https://img.shields.io/github/release/jamesking56/laravel-stagefront.svg?style=flat-square)](https://github.com/jamesking56/laravel-stagefront/releases)
 [![Laravel](https://img.shields.io/badge/laravel-11-red?style=flat-square&logo=laravel&logoColor=white)](https://laravel.com)
-[![License](https://img.shields.io/packagist/l/codezero/laravel-stagefront.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/codezero-be/laravel-stagefront/run-tests.yml?style=flat-square&logo=github&logoColor=white&label=tests)](https://github.com/codezero-be/laravel-stagefront/actions)
-[![Code Quality](https://img.shields.io/codacy/grade/a5db8a1321664e67900c96eadc575ece/master?style=flat-square)](https://app.codacy.com/gh/codezero-be/laravel-stagefront)
-[![Total Downloads](https://img.shields.io/packagist/dt/codezero/laravel-stagefront.svg?style=flat-square)](https://packagist.org/packages/codezero/laravel-stagefront)
+[![License](https://img.shields.io/packagist/l/jamesking56/laravel-stagefront.svg?style=flat-square)](LICENSE.md)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/jamesking56/laravel-stagefront/run-tests.yml?style=flat-square&logo=github&logoColor=white&label=tests)](https://github.com/jamesking56/laravel-stagefront/actions)
+[![Code Quality](https://img.shields.io/codacy/grade/a5db8a1321664e67900c96eadc575ece/master?style=flat-square)](https://app.codacy.com/gh/jamesking56/laravel-stagefront)
+[![Total Downloads](https://img.shields.io/packagist/dt/jamesking56/laravel-stagefront.svg?style=flat-square)](https://packagist.org/packages/codezero/laravel-stagefront)
 
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R3UQ8V)
+### RIP Ivan Vermeyen: thank you for your fantastic work
 
 #### Quickly add password protection to a staging site.
 
@@ -29,9 +29,9 @@ By installing StageFront with composer, adding the middleware and setting 3 vari
 #### ☑️ Require the package via Composer:
 
 ```bash
-composer require codezero/laravel-stagefront
+composer require jamesking56/laravel-stagefront
 ```
-Laravel will automatically register the [ServiceProvider](https://github.com/codezero-be/laravel-stagefront/blob/master/src/StageFrontServiceProvider.php) and routes.
+Laravel will automatically register the [ServiceProvider](https://github.com/jamesking56/laravel-stagefront/blob/master/src/StageFrontServiceProvider.php) and routes.
 
 When StageFront is disabled, its routes will not be registered.
 
@@ -65,7 +65,7 @@ Now you just need to set some `.env` variables and you are up and running!
 
 Set some options in your `.env` file or publish the [configuration file](#-publish-configuration-file).
 
-See an [example .env file](https://github.com/codezero-be/laravel-stagefront/blob/master/.env.example).
+See an [example .env file](https://github.com/jamesking56/laravel-stagefront/blob/master/.env.example).
 
 Enable StageFront and choose a login and password:
 
@@ -266,17 +266,18 @@ composer test
 
 ## ☕️ Credits
 
-- [Ivan Vermeyen](https://byterider.io/)
+- [Ivan Vermeyen (RIP)](https://byterider.io/)
+- [James King](https://jamesking.dev/)
 - [All contributors](../../contributors)
 
 ## 🔓 Security
 
-If you discover any security related issues, please [e-mail me](mailto:ivan@codezero.be) instead of using the issue tracker.
+If you discover any security related issues, please [e-mail me](mailto:james@jamesking.dev) instead of using the issue tracker.
 
 ## 📑 Changelog
 
 A complete list of all notable changes to this package can be found on the
-[releases page](https://github.com/codezero-be/laravel-stagefront/releases).
+[releases page](https://github.com/jamesking56/laravel-stagefront/releases).
 
 ## 📜 License
 
