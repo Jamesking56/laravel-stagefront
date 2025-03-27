@@ -21,8 +21,8 @@ By installing StageFront with composer, adding the middleware and setting 3 vari
 
 ## ✅ Requirements
 
--   PHP ^7.1 | ^8.0
--   [Laravel](https://laravel.com/) >= 5.7
+-   PHP ^8.2
+-   [Laravel](https://laravel.com/) >= 11
 
 ## 📦 Installation
 
@@ -37,19 +37,7 @@ When StageFront is disabled, its routes will not be registered.
 
 #### ☑️ Install Middleware
 
-To activate the middleware, add it to the `web` middleware group in `app/Http/Kernel.php`, **right after the `StartSession` middleware**:
-
-```php
-protected $middlewareGroups = [
-    'web' => [
-        \Illuminate\Session\Middleware\StartSession::class, // <= after this
-        \CodeZero\StageFront\Middleware\RedirectIfStageFrontIsEnabled::class,
-        //...
-    ],
-];
-```
-
-In Laravel 6+ you need to add the middleware to the `$middlewarePriority` array in `app/Http/Kernel.php`, **right after the `StartSession` middleware**. 
+To activate the middleware, you need to add the middleware to the `$middlewarePriority` array in `app/Http/Kernel.php`, **right after the `StartSession` middleware**. 
 
 ```php
 protected $middlewarePriority = [
@@ -76,7 +64,7 @@ Enable StageFront and choose a login and password:
 | `STAGEFRONT_PASSWORD`  | `string` | `stagefront` |
 | `STAGEFRONT_ENCRYPTED` | `bool`   | `false`      |
 
-By default StageFront is disabled and uses a plain text password when it's enabled. If you set `STAGEFRONT_ENCRYPTED` to `true` the password should be a hashed value. You can generate this using Laravel's `\Hash::make('your password')` function.
+By default, StageFront is disabled and uses a plain text password when it's enabled. If you set `STAGEFRONT_ENCRYPTED` to `true` the password should be a hashed value. You can generate this using Laravel's `\Hash::make('your password')` function.
 
 ##### Artisan Commands for Quick Setup
 
@@ -113,13 +101,13 @@ The above login and password settings will then be ignored.
 | `STAGEFRONT_DATABASE_PASSWORD_FIELD` | `string` | `password` |
 
 If you want to grant access to just a few of those users, you can whitelist them by setting `STAGEFRONT_DATABASE_WHITELIST` to a comma separated string: `'john@doe.io,jane@doe.io'`.
-In the config file itself you can also use an array of e-mail addresses.
+In the config file itself, you can also use an array of e-mail addresses.
 
-By default the `users` table is used with the `email` and `password` field names. But you can change this if you are using some other table or fields.
+By default, the `users` table is used with the `email` and `password` field names. But you can change this if you are using some other table or fields.
 
 ## 🔖 IP Whitelist
 
-You can add a comma separated list of IP's to grant these users easier or exclusive access to your staging site.
+You can add a comma-separated list of IP's to grant these users easier or exclusive access to your staging site.
 For example: `'1.2.3.4,1.2.3.4'`. In the config file itself you can also use an array of IP's.
 
 | Option                                  | Type     | Default    |
@@ -141,7 +129,7 @@ Set `STAGEFRONT_IP_WHITELIST_REQUIRE_LOGIN` to `true` to set this up.
 
 #### ☑️ Change Route URL
 
-By default a `GET` and `POST` route will be registered with the `/stagefront` URL.
+By default, a `GET` and `POST` route will be registered with the `/stagefront` URL.
 
 You can change the URL by setting this option:
 
@@ -193,14 +181,14 @@ For example:
 'ignore_urls' => [
     // ignores /john, but noting under /john
     '/john',
-    // ignores everyting under /jane, but not /jane itself
+    // ignores everything under /jane, but not /jane itself
     '/jane/*',
 ],
 ```
 
 #### ☑️ Ignore Domains
 
-If for any reason you wish to disable StageFront on specific doamins, you can add these to the `ignore_udomains` array in the [configuration file](#-publish-configuration-file). You can't set this in the `.env` file.
+If for any reason you wish to disable StageFront on specific domains, you can add these to the `ignore_domains` array in the [configuration file](#-publish-configuration-file). You can't set this in the `.env` file.
 
 For example:
 
@@ -272,7 +260,7 @@ composer test
 
 ## 🔓 Security
 
-If you discover any security related issues, please [e-mail me](mailto:james@jamesking.dev) instead of using the issue tracker.
+If you discover any security-related issues, please [e-mail me](mailto:james@jamesking.dev) instead of using the issue tracker.
 
 ## 📑 Changelog
 
