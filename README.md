@@ -21,7 +21,7 @@ By installing StageFront with composer, adding the middleware and setting 3 vari
 
 ## ✅ Requirements
 
--   PHP ^8.2
+-   PHP ^8.4
 -   [Laravel](https://laravel.com/) >= 11
 
 ## 📦 Installation
