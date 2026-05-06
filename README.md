@@ -1,10 +1,10 @@
 # Laravel StageFront
 
 [![GitHub release](https://img.shields.io/github/release/jamesking56/laravel-stagefront.svg?style=flat-square)](https://github.com/jamesking56/laravel-stagefront/releases)
-[![Laravel](https://img.shields.io/badge/laravel-11-red?style=flat-square&logo=laravel&logoColor=white)](https://laravel.com)
+[![Laravel](https://img.shields.io/badge/laravel-12-red?style=flat-square&logo=laravel&logoColor=white)](https://laravel.com)
+[![Laravel](https://img.shields.io/badge/laravel-13-red?style=flat-square&logo=laravel&logoColor=white)](https://laravel.com)
 [![License](https://img.shields.io/packagist/l/jamesking56/laravel-stagefront.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/jamesking56/laravel-stagefront/run-tests.yml?style=flat-square&logo=github&logoColor=white&label=tests)](https://github.com/jamesking56/laravel-stagefront/actions)
-[![Code Quality](https://img.shields.io/codacy/grade/a5db8a1321664e67900c96eadc575ece/master?style=flat-square)](https://app.codacy.com/gh/jamesking56/laravel-stagefront)
 [![Total Downloads](https://img.shields.io/packagist/dt/jamesking56/laravel-stagefront.svg?style=flat-square)](https://packagist.org/packages/codezero/laravel-stagefront)
 
 ### RIP Ivan Vermeyen: thank you for your fantastic work
